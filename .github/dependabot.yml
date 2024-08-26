@@ -1,0 +1,13 @@
+version: 2
+updates:
+  # Configure updates for npm packages
+  - package-ecosystem: "npm"
+    directory: "/" # Location of the package.json file
+    schedule:
+      interval: "weekly" # Check for updates daily
+
+  # Configure updates for Docker dependencies
+  - package-ecosystem: "docker"
+    directory: "/" # Location of the Dockerfile
+    schedule:
+      interval: "weekly" # Check for updates daily
